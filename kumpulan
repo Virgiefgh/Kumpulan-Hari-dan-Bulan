@@ -1,0 +1,129 @@
+#include<iostream.h>
+#include<stdio.h>
+#include<conio.h>
+
+main(){
+int hari,bulan,pilih;
+char jwb;
+
+lagi:
+clrscr();
+cout<<"Pilih Menu :"<<endl;
+cout<<"1. Penentuan Hari"<<endl;
+cout<<"2. Penentuan Bulan"<<endl;
+cout<<"Silahkan Pilih 1/2 :";
+cin>> pilih;
+if (pilih==1){
+goto hari;
+}
+else if (pilih==2){
+goto bulan;}
+
+hari:
+cout<<"Menentukan Hari"<<endl;
+cout<<"1 = SENIN 3 = RABU 5 = JUM'AT 7 = MINGGU"<<endl;
+cout<<"2 = SELASA 4 = KAMIS 6 = SABTU\n"<<endl;
+cout<<"Masukkan kode hari (1..7) :";
+cin>>hari;
+
+switch(hari) {
+case 1:
+cout << "Hari Senin";
+break;
+case 2:
+cout << "Hari Selasa";
+break;
+case 3:
+cout << "Hari Rabu";
+break;
+case 4:
+cout << "Hari Kamis";
+break;
+case 5:
+cout << "Jum'at";
+break;
+case 6:
+cout << "Hari Sabtu";
+break;
+case 7:
+cout << "Hari Minggu";
+break;
+default :
+cout << "Anda Salah Memasukkan Kode";
+}
+
+cout <<endl;
+cout << "Ingin Input Lagi [Y/T} : "; cin>>jwb;
+if (jwb == 'Y' || jwb == 'y')
+goto lagi;
+else
+goto keluar;
+getch();
+
+
+bulan:
+clrscr();
+cout << "1 = JANUARI 3 = MARET 5 = MEI 7 = JULI  9 = SEPTEMBER 11 = NOVEMBER" <<endl;
+cout << "2 = FEBRUARI 4 = APRIL 6 = JUNI 8 = AGUSTUS 10 = OKTOBER	12 = DESEMBER" <<endl;
+
+cout<< "Masukkan Kode Bulan (1..12) : ";
+cin>>bulan;
+
+switch (bulan){
+ case 1:
+ cout << "Bulan Januari";
+ break;
+ case 2:
+ cout << "Bulan Februari";
+ break;
+ case 3:
+ cout << "Bulan Maret";
+ break;
+ case 4:
+ cout << "Bulan April";
+ break;
+ case 5:
+ cout << "Bulan Mei";
+ break;
+ case 6:
+ cout << "Bulan Juni";
+ break;
+ case 7:
+ cout << "Bulan Juli";
+ break;
+ case 8:
+ cout << "Bulan Agustus";
+ break;
+ case 9:
+ cout << "Bulan September";
+ break;
+ case 10:
+ cout << "Bulan Oktober";
+ break;
+ case 11:
+ cout << "Bulan November";
+ break;
+ case 12:
+ cout << "Bulan Desember";
+ break;
+ }
+ cout << endl;
+cout << "Ingin Input Lagi [Y/T} : "; cin>>jwb;
+if (jwb == 'Y' || jwb == 'y')
+goto lagi;
+else
+goto keluar;
+getch();
+keluar:
+}
+
+
+
+
+
+
+
+
+
+
+
